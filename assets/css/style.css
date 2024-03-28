@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --cor-principal: #000;
+  --cor-secundaria: #fff;
+  --cor-terciaria: #f7f7f7;
+  --cor-quartenaria: #ddd;
+  --cor-texto: #252525;
+  --cor-texto-secundaria: #666;
+  --cor-fundo: #fff;
+  --cor-borda: #ddd;
+}
+
+.modo-escuro {
+  --cor-principal: #fff;
+  --cor-secundaria: #000;
+  --cor-terciaria: #222;
+  --cor-quartenaria: #444;
+  --cor-texto: #fff;
+  --cor-texto-secundaria: #ddd;
+  --cor-fundo: #000;
+  --cor-borda: #444;
+}
+
+
+body {
+    transition: background .5s;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1, h2, h3 {
+    text-shadow: 0px 0px 10px var(--cor-principal);
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-around;
+    box-shadow: var(--cor-texto) 0 0 5px 0px;
+    gap: 450px;
+}
+
+.nav img {
+    height: 50px;
+    object-fit: cover;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav ul li {
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+    color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    transition: 0.5s;
+}
+
+.adeamor:hover, .adeamor.branco:hover{
+    color: #00ff4c !important;
+}
+
+i {
+    color: var(--cor-texto);
+}
+
+.fa-circle-half-stroke {
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.black-and-white {
+    background-color: var(--cor-principal) !important;
+    color: #fff !important;
+  }
+
+.branco {
+    color: #fff !important;
+}
+
+.conteudo {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all .5s;
+}
+
+.expandir {
+  width: 52.5vw !important;
+  height: auto !important;
+  padding: 50px;
+  display: flex !important;
+  justify-content: space-between !important;
+  background-image: linear-gradient(to left, #00ff4c 0%, #00b44b 100%) !important;
+}
+
+.expandirV {
+  width: 52.5vw !important;
+  height: auto !important;
+  padding: 50px;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.expandirV1 {
+  width: 52.5vw !important;
+  height: auto !important;
+  padding: 50px;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.t1 {
+  text-align: justify;
+}
+
+.quebrar {
+  flex-direction: row !important;
+}
+
+.quebrar2 {
+  flex-direction: column !important;
+
+}
+
+.c1 {
+    width: 480px;
+    height: 480px;
+    border-radius: 25px;
+    background-size: cover;
+    overflow: auto;
+    background-position: center;
+    background-image:linear-gradient(to top, black 0%, transparent 80%), url('https://nucleohealthcare.com.br/wp-content/uploads/2018/08/197283-quais-os-beneficios-da-acessibilidade-nas-empresas.jpg');
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 20px;
+  }
+
+  .c1, .c3, .c4 {
+    transition: all .2s linear;
+  }
+
+  .c1 h2 {
+    font-size: 18px;
+  }
+  
+  .c1:hover {
+    animation: pulse .2s linear;
+    background-size: 110%;
+  }
+
+  .c2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .c2 h1 {
+    font-size: 24px;
+  }
+
+  .c2 h2 {
+    font-size: 14px;
+  }
+
+  .c {
+    width: 480px;
+    height: 215px;
+    border-radius: 25px;
+    background-size: cover;
+    overflow: auto;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 20px;
+  }
+
+  .c:nth-child(1) {
+    background-image:linear-gradient(to top, black 0%, transparent 80%), url('https://zenklub.com.br/blog/wp-content/uploads/2022/12/iStock-1250006179-min.jpg');
+  }
+
+  .c:nth-child(2) {
+    background-image:linear-gradient(to top, black 0%, transparent 80%), url('https://audcontcontabilidade.com.br/wp-content/uploads/Como-Abrir-uma-Empresa-de-Software.jpg');
+  } 
+  
+  .c:hover {
+    animation: pulse .2s linear;
+    background-size: 110%;
+  }
+
+  @keyframes pulse {
+    0% { background-size: 100%; }
+    100% { background-size: 110%; }
+  }
+  
+
+.btnVerSobre {
+    display: none;
+    margin-top: 20px;
+    background-color: #00ff4c!important;
+    color: #fff!important;
+    border-style: none;
+    border: #00ff4c solid 2px !important;
+    border-radius: 50px;
+    padding: 15px 50px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px !important;
+    transition: .3s;
+}
+
+.btnVerSobre:hover {
+    background-color: var(--cor-secundaria) !important;
+    color: #00ff4c !important;
+}
+
+.btnPreto:hover {
+    background-color: var(--cor-principal) !important;
+    color: #00ff4c !important;
+}
+
+.btn h1 {
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+.btn {
+  width: 100vw !important;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.espaco {
+  width: 100vw !important;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#transcription {
+  white-space: pre-wrap;
+  width: 80vw;
+  height: auto;
+  border: #c0c0c0 1px solid;
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+#startButton {
+  border-style: none;
+  background-image: linear-gradient(to left, #00ff4c 0%, #00b44b 100%);
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+  visibility: hidden;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(to left, #00ff4c 0%, #00b44b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+  position: absolute;
+  bottom: 0;
+}
+
+.container1 {
+  width: 100vw;
+  height: 73.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.container1 div:nth-child(1) h1 {
+  text-shadow: none;
+  text-align: center;
+  color: var(--cor-principal);
+}
+
+.container1 div:nth-child(1){
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: -30px;
+}
+
+
+.f1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+#sobre {
+  width: 50vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: justify;
+  color: var(--cor-principal);
+}
+
+#textao {
+  width: 50vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: justify;
+  color: var(--cor-principal);
+}
+  
+.modo-escuro {
+  color: var(--cor-principal) !important;
+  background-color: var(--cor-fundo) !important;
+}
+
+
+.container2 {
+  width: 100vw;
+  height: 73.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
